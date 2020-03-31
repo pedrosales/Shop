@@ -74,7 +74,7 @@ public class CategoryController : ControllerBase
         {
             return BadRequest(new { message = "Este registro já foi atualizado" });
         }
-        catch (Exception ex)
+        catch (Exception)
         {
             return BadRequest(new { message = "Não foi possível atualizar a categoria" });
         }
